@@ -13,6 +13,9 @@ Scrapy练习项目，利用Scrapy抓取古诗（唐诗三百首，宋词三百�
 - 在利用xpath提取数据的时候添加[normalize-space()]避免提取空格
 - 将提取到的列表转换成字符串，再strip（）
 
-> 提取一首诗题目之后根据题目进入到下一个页面提取相对应的内容，使用yield request发现不对应
+> 提取一首诗题目之后根据题目进入到下一个页面提取相对应的内容，使用yield request发现内容不对应
 - Scrapy默认抓取为多线程，使用第三方requests提取网站源码，并用Scrapy的HtmlResponse转换成
   Scrapy响应格式,即可正常使用xpath抓取
+
+> 网站赏析部分有文字图片,提取时自动忽略
+- 利用xpath提取整段源码，然后使用re去除不相关p和a标签，把文字图片的img标签替换成alt属性中的内容
