@@ -8,4 +8,4 @@ Scrapy练习项目，利用Scrapy抓取古诗（唐诗三百首，宋词三百�
 - requests提取网页源码（解决Scrapy yield request异步访问诗的标题和内容不对应的问题）
 - HtmlResponse 转换源码为Scrapy响应对象，从而可以利用Selector
 ##遇到的问题
-
+> 转换成json数据的时候多了很多无用的空格
