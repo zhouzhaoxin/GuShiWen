@@ -8,7 +8,7 @@ Scrapy练习项目，利用Scrapy抓取古诗（唐诗三百首，宋词三百�
 - requests提取网页源码
 - HtmlResponse 转换源码为Scrapy响应对象，从而可以利用Selector
 
-##遇到的问题
+## 遇到的问题
 > 转换成json数据的时候多了很多无用的空格
 - 在利用xpath提取数据的时候添加[normalize-space()]避免提取空格
 - 将提取到的列表转换成字符串，再strip（）<br>
